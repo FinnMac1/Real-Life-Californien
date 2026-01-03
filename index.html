@@ -8,13 +8,13 @@
 <link rel="icon" href="Real Life Californien.png" type="image/png">
 <style>
 :root{
-  --bg:#050616;
+  --bg:#da7604;
   --neon-blue:#fbff00;
   --neon-pink:#ffcc3e;
-  --neon-orange:#ff7a1a;
+  --neon-orange:#dd5c00;
   --card: rgba(255,255,255,0.02);
   --text: #e6f2ff;
-  --muted: #9aa8c6;
+  --muted: #48546d;
 }
 
 *{box-sizing:border-box;margin:0;padding:0;}
@@ -37,11 +37,11 @@ body{padding-bottom:60px;line-height:1.45;}
   border-radius: 12px;
   border: 1px solid rgba(255, 255, 255, 0.06);
   backdrop-filter: blur(6px);
-  box-shadow: 0 0 10px rgba(0, 229, 255, 0.05);
+  box-shadow: 0 10px 40px rgba(0,0,0,0.5), 0 0 30px rgba(0,229,255,0.04);
 }
 
 .discord-btn {
-  background: linear-gradient(90deg, #fbff00e0, #00bfff);
+  background: linear-gradient(90deg, #d9dd00, #ffa600);
   color: #e6f2ff;
   padding: 8px 14px;
   border-radius: 8px;
@@ -54,7 +54,7 @@ body{padding-bottom:60px;line-height:1.45;}
 
 .discord-btn:hover {
   transform: translateY(-2px);
-  background: linear-gradient(90deg, #00bfff, #007acc);
+  background: linear-gradient(90deg, #ffa600, #ffa600);
   box-shadow: 0 0 12px rgba(0, 191, 255, 0.3);
 }
 
@@ -73,11 +73,11 @@ main{position:relative; width:100%; max-width:1100px;margin:100px auto 40px;padd
 
 .hero-inner, .team-grid, .news-list, .about-grid{background: var(--card); padding:22px; border-radius:12px; border:1px solid rgba(255,255,255,0.02);}
 
-.hero-inner{display:grid;grid-template-columns:1fr 420px; gap:28px;align-items:center; margin-bottom:40px;}
+.hero-inner{display:grid;grid-template-columns:1fr 420px; gap:28px;align-items:center; margin-bottom:40px;box-shadow: 0 10px 40px rgba(0,0,0,0.5), 0 0 30px rgba(0,229,255,0.04);}
 .hero-left h2{font-size:44px;color:var(--neon-blue); margin-bottom:12px;}
 .tagline{color:var(--muted); margin-bottom:20px;}
 .btn{padding:12px 16px;border-radius:12px;font-weight:700;text-decoration:none;display:inline-flex;align-items:center;gap:10px;cursor:pointer;}
-.btn-primary{background:linear-gradient(90deg,var(--neon-blue),#6ff3ff);color:#05141a;}
+.btn-primary{background:linear-gradient(90deg,var(--neon-blue),#ffa600);color:#05141a;}
 .btn-ghost{background:transparent;border:1px solid rgba(255,255,255,0.06);color:var(--text);}
 
 .hero-inner img{
@@ -86,9 +86,15 @@ main{position:relative; width:100%; max-width:1100px;margin:100px auto 40px;padd
   height:auto;
   filter: drop-shadow(0 10px 36px rgba(0,229,255,0.08));
   border-radius:12px; /* optional */
+  
 }
 
-.news-item, .team-card, .feature{padding:16px;margin-bottom:12px;border-radius:12px;background:linear-gradient(180deg, rgba(255,255,255,0.01), rgba(255,255,255,0.02));border:1px solid rgba(255,255,255,0.02);}
+.news-item, .team-card, .feature{padding:16px;
+  margin-bottom:12px;
+  border-radius:12px;
+  background:linear-gradient(180deg, rgba(255,255,255,0.01), rgba(255,255,255,0.02));
+  border:1px solid rgba(255,255,255,0.02);
+  box-shadow: 0 10px 40px rgba(0,0,0,0.5), 0 0 30px rgba(0,229,255,0.04);}
 .news-item h4{color:var(--neon-orange);}
 .team-card h4{color:var(--neon-blue);}
 h3{color:var(--neon-pink); margin-bottom:12px;}
@@ -152,7 +158,13 @@ h3{color:var(--neon-pink); margin-bottom:12px;}
 
 
 footer{position:fixed;left:0;right:0;bottom:12px;display:flex;justify-content:center;z-index:30;padding:6px 10px;}
-.footer-inner{width:calc(100% - 48px);max-width:1100px;padding:10px 14px;border-radius:12px;background:linear-gradient(180deg, rgba(255,255,255,0.01), rgba(255,255,255,0.01));display:flex;justify-content:space-between;align-items:center;border:1px solid rgba(255,255,255,0.02);}
+.footer-inner{width:calc(100% - 48px);max-width:1100px;
+  padding:10px 14px;border-radius:12px;
+  background:linear-gradient(180deg, rgba(255,255,255,0.01), rgba(255,255,255,0.01));
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  border:1px solid rgba(255,255,255,0.02);}
 .muted{color:var(--muted); font-size:13px;}
 
 .footer-link-neon {
@@ -182,7 +194,7 @@ footer{position:fixed;left:0;right:0;bottom:12px;display:flex;justify-content:ce
 
 <nav class="nav">
   <div class="brand">
-    <img src="Real Life Californien.png" alt="Logo">
+    <img src="Real Life Californientransparent.png" alt="Logo">
     <h1>RL Californien</h1>
   </div>
   <div class="navlinks">
@@ -195,8 +207,8 @@ footer{position:fixed;left:0;right:0;bottom:12px;display:flex;justify-content:ce
   </div>
   
    <div class="discord-box">
-    <a href="https://discord.gg/cAjZ7VehZ7" target="_blank" class="discord-btn">Main Discord</a>
-    <a href="https://discord.gg/X86gPzpNpc" target="_blank" class="discord-btn">Entbannungs Discord</a>
+    <a href="https://discord.gg/8qcHSsfa" target="_blank" class="discord-btn">Main Discord</a>
+    <a href="https://discord.gg/yDw65Mzy" target="_blank" class="discord-btn">Entbannungs Discord</a>
   </div>
 </nav>
 
@@ -208,7 +220,7 @@ footer{position:fixed;left:0;right:0;bottom:12px;display:flex;justify-content:ce
         <h2>Willkommen auf unserem FiveM Server Real Life Californien!</h2>
         <p class="tagline">Erlebe das beste Hardcore Roleplay auf Real Life Californien.</p>
         <div>
-          <a href="https://discord.gg/cAjZ7VehZ7" class="btn btn-primary">Jetzt beitreten</a>
+          <a href="https://discord.gg/8qcHSsfa" class="btn btn-primary">Jetzt beitreten</a>
         </div>
         <br>
 		   <p class="tagline">Hier können Sie spenden wenn sie den Fivem Server unterstützten wollen. Jede Spende wird gleich in denn Server reingesteckt um ein besseres Rp erlebnis für euch zu gestallten.</p>
@@ -217,7 +229,7 @@ footer{position:fixed;left:0;right:0;bottom:12px;display:flex;justify-content:ce
         </div>
       </div>
       <div>
-        <img src="Real Life Californien.png" alt="Server Banner"> 
+        <img src="Real Life Californientransparent.png" alt="Server Banner"> 
       </div>
     </div>
   </section>
@@ -235,12 +247,12 @@ footer{position:fixed;left:0;right:0;bottom:12px;display:flex;justify-content:ce
   <section class="page hidden" id="team">
     <h3>Server Team</h3>
     <div class="team-grid">
-      <div class="team-card"><h4>RLC | Foukie_9</h4><p>Server Inhaber</p> <img src="Real Life Californien.png" class="team-avatar"> </div>
-      <div class="team-card"><h4>RLC | Finn</h4><p>Stv. Server Inhaber</p> <img src="Real Life Californien.png" class="team-avatar"> </div>
-      <div class="team-card"><h4>RLC | Viper 2.0</h4><p>Projekleitung</p> <img src="Real Life Californien.png" class="team-avatar"> </div>
-	  <div class="team-card"><h4>RLC | Ghost</h4><p>Stv. Projekleitung / Stv. Teamleitung</p> <img src="Real Life Californien.png" class="team-avatar"> </div>
-	  <div class="team-card"><h4>RLC | </h4><p>Teamleitung</p> <img src="Real Life Californien.png" class="team-avatar"> </div>
-	  <div class="team-card"><h4>RLC | Vexron</h4><p>Entwicklungsleitung</p> <img src="Real Life Californien.png" class="team-avatar"> </div>
+      <div class="team-card"><h4>RLC | Foukie_9</h4><p>Server Inhaber</p> <img src="Real Life Californientransparent.png" class="team-avatar"> </div>
+      <div class="team-card"><h4>RLC | Finn</h4><p>Stv. Server Inhaber</p> <img src="Real Life Californientransparent.png" class="team-avatar"> </div>
+      <div class="team-card"><h4>RLC | Viper 2.0</h4><p>Projekleitung</p> <img src="Real Life Californientransparent.png" class="team-avatar"> </div>
+	  <div class="team-card"><h4>RLC | Ghost</h4><p>Stv. Projekleitung / Stv. Teamleitung</p> <img src="Real Life Californientransparent.png" class="team-avatar"> </div>
+	  <div class="team-card"><h4>RLC | </h4><p>Teamleitung</p> <img src="Real Life Californientransparent.png" class="team-avatar"> </div>
+	  <div class="team-card"><h4>RLC | Vexron</h4><p>Entwicklungsleitung</p> <img src="Real Life Californientransparent.png" class="team-avatar"> </div>
     </div>
   </section>
   
@@ -250,7 +262,7 @@ footer{position:fixed;left:0;right:0;bottom:12px;display:flex;justify-content:ce
     <div class="feature"><strong>Unsere Spieler</strong> <br> Jeder soll Spaß auf unserem FiveM Server haben und ein richtig spektakuläres Hardcore RP zu erleben! </div>
     <div class="feature"><strong>Unsere Vision</strong> <br> Einen der größten Deutschsprachigen FiveM Server aufzubauen mit dem namen Real Life Californien!</div>
     <div class="feature"><strong>Unsere Geschichte</strong> <br> Jeder fängt mal klein an - so wie wir. Aus einer gemeinsamen Vision haben wir zusammen Schritt für Schritt etwas Großes gemacht. Darauf sind wir stolz.</div>
-	<div class="feature"><strong>Unser Projekt</strong> <br> Wir arbeiten stets an unserem Server – meistens, an MLO´s Script´s oder sonst irgendwelchen sachen auf unserem Server! </div>
+	<div class="feature"><strong>Unser Projekt</strong> <br> Wir arbeiten stets an unserem Server – meistens, an MLO´s Script´s oder sonst iergendwelchen sachen auf unserem Server! </div>
   </section>
 
   <!-- IC Regeln -->
@@ -365,7 +377,7 @@ footer{position:fixed;left:0;right:0;bottom:12px;display:flex;justify-content:ce
     <p>Real Life Californien<br>
     Serverleitung: Foukie_9 und Finn<br>
     Kontakt: Über Discord @Foukie_9 und @Felix<br>
-    Discord: <a href="https://discord.gg/cAjZ7VehZ7"> Discord Server</a></p>
+    Discord: <a href="https://discord.gg/8qcHSsfa"> Discord Server</a></p>
 
     <div class="impressum-contact">
       <p><strong>Verantwortlich für den Inhalt nach § 55 Abs. 2 RStV:</strong><br>
@@ -385,7 +397,7 @@ footer{position:fixed;left:0;right:0;bottom:12px;display:flex;justify-content:ce
      **Foukie_9 & Finn**<br>
      Kontakt über Discord: [Real Life Californien Discord-Server] <br>
      (Foukie_9 Discord id:736198862439448578 ; Finn Discord id:914103374939586611 .)<br>
-     Discord: <a href="https://discord.gg/cAjZ7VehZ7"> Discord Server</a></p>
+     Discord: <a href="https://discord.gg/8qcHSsfa"> Discord Server</a></p>
 
     <div class="impressum-contact">
       <p><strong>2. Zweck der Datenverarbeitung</strong><br>
@@ -394,7 +406,7 @@ footer{position:fixed;left:0;right:0;bottom:12px;display:flex;justify-content:ce
 	<div class="impressum-contact">
       <p><strong>3. Welche Daten wir verarbeiten</strong><br>
       <p>Beim Spielen und der Teilnahme am Projekt können folgende Daten erhoben werden:<br></p>
-	  <p>Discord: <a href="https://discord.gg/cAjZ7VehZ7"> Discord Server</a> <br>
+	  <p>Discord: <a href="https://discord.gg/8qcHSsfa"> Discord Server</a> <br>
 	   Stimmaufnahmen (Voice Chat)** — z. B. durch automatische Ingame-Aufzeichnung von Sprachkommunikation zu Moderations- oder Sicherheitszwecken<br></p>
 	   <p>Diese Daten werden **nicht zu Werbezwecken** verwendet oder an Dritte weitergegeben.</p>
 	   
@@ -485,6 +497,4 @@ function showPage(pageId) {
 
 
 </body>
-
 </html>
-
